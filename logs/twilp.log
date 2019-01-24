@@ -1,0 +1,312 @@
+Reading the input ...
+The data contains 37 variables and in total 5087 possible parent sets
+CPXPARAM_Preprocessing_Presolve                  0
+CPXPARAM_TimeLimit                               60
+CPXPARAM_Read_DataCheck                          1
+CPXPARAM_Preprocessing_Reduce                    0
+CPXPARAM_MIP_Tolerances_MIPGap                   9.9999999999999995e-08
+CPXPARAM_Preprocessing_Relax                     0
+CPXPARAM_MIP_Strategy_PresolveNode               -1
+CPXPARAM_Preprocessing_RepeatPresolve            0
+CPXPARAM_MIP_Strategy_Search                     1
+Lazy constraint(s) or lazy constraint callback is present.
+    Disabling non-linear reductions (CPX_PARAM_PRELINEAR) in presolve.
+Clique table members: 1592.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.61 sec. (346.23 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+      0     0   -65007.8332   241                 -65007.8332      957         
+Heuristic callback called
+Heuristic callback finished
+*     0+    0                      -118276.6726   -65007.8332            45.04%
+User Lazy cut opportunity 
+-66663.437593
+0.450374855872
+-118276.672564
+CPXPARAM_TimeLimit                               5
+CPXPARAM_Read_DataCheck                          1
+CPXPARAM_MIP_Limits_TreeMemory                   6144
+Tried aggregator 1 time.
+MIP Presolve eliminated 105 rows and 0 columns.
+MIP Presolve added 210 rows and 0 columns.
+Reduced MIP has 2771 rows, 1369 columns, and 8276 nonzeros.
+Reduced MIP has 1369 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (7.10 ticks)
+Probing time = 0.01 sec. (11.20 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 1542 rows and 666 columns.
+MIP Presolve added 210 rows and 0 columns.
+Reduced MIP has 1439 rows, 703 columns, and 4280 nonzeros.
+Reduced MIP has 703 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (5.20 ticks)
+Probing time = 0.00 sec. (2.46 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1439 rows, 703 columns, and 4280 nonzeros.
+Reduced MIP has 703 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.21 ticks)
+Probing time = 0.00 sec. (2.46 ticks)
+Clique table members: 1332.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 0.01 sec. (28.83 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       -0.8108   142                     -0.8108      216         
+      0     0        cutoff                                        435         
+Elapsed time = 0.11 sec. (132.91 ticks, tree = 0.01 MB, solutions = 0)
+
+Zero-half cuts applied:  253
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (132.94 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (132.94 ticks)
+the cluster-finder sol status $$$$$$ is MIP_infeasible
+CPXPARAM_TimeLimit                               5
+CPXPARAM_Read_DataCheck                          1
+CPXPARAM_MIP_Limits_TreeMemory                   6144
+Tried aggregator 2 times.
+MIP Presolve eliminated 162 rows and 73 columns.
+MIP Presolve added 2 rows and 2 columns.
+MIP Presolve modified 94 coefficients.
+Aggregator did 2 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.27 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.28 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.28 ticks)
+the cluster-finder sol status is MIP_optimal
+************ Lazy User cut for z applied  ************
+Lazy callback completed
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 0
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+*     0+    0                      -115500.7116   -65007.8332            43.72%
+      0     2   -67142.2647   157  -115500.7116   -67142.2647      957   41.87%                        0             0
+Elapsed time = 8.15 sec. (6500.03 ticks, tree = 0.01 MB, solutions = 2)
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 2
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      1     3   -67142.2647   148  -115500.7116   -67142.2647     1001   41.87%            z_36 U      1      0      1
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 4
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      2     4   -67142.2647   140  -115500.7116   -67142.2647     1272   41.87%          y_2_28 U      2      1      2
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 6
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      3     5   -67142.2647   134  -115500.7116   -67142.2647     1665   41.87%         y_28_25 U      3      2      3
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 5
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      4     6   -67142.2647   126  -115500.7116   -67142.2647     1744   41.87%         y_28_25 D      4      2      3
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 10
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      5     7   -67142.2647   132  -115500.7116   -67142.2647     2155   41.87%         y_26_27 U      5      4      4
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 12
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      6     8   -67142.2647   136  -115500.7116   -67142.2647     2867   41.87%         y_30_34 U      6      5      5
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 11
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      7     9   -67142.2647   191  -115500.7116   -67142.2647    13319   41.87%         y_30_34 D      7      5      5
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 14
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      8    10   -67161.5685   112  -115500.7116   -67142.2647    20750   41.87%          y_29_2 U      8      6      6
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 17
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+      9    11   -67165.6620   119  -115500.7116   -67142.2647    21218   41.87%          y_2_30 D      9      8      7
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 19
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 21
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 22
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+     12    14   -67199.0424    98  -115500.7116   -67142.2647    21913   41.87%   z_28_30_34_29 U     12     10      9
+Elapsed time = 44.16 sec. (37283.31 ticks, tree = 1.48 MB, solutions = 2)
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 23
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 28
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 30
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 29
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 34
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+     17    19   -67186.6747   110  -115500.7116   -67142.2647    23769   41.87%          y_22_8 U     17     16     13
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 33
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 37
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 40
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+     20    22   -67226.7348   124  -115500.7116   -67142.2647    24993   41.87%         y_34_18 U     20     19     15
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 39
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 44
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 45
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 46
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 47
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 51
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 53
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 55
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 57
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 60
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+     30    32   -67194.8229   140  -115500.7116   -67142.2647    25592   41.87%   z_15_20_22_19 U     30     29     23
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 59
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 63
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 65
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+*    33+   33                      -112596.5204   -67142.2647            40.37%
+***********************************************************
+nid nid nid nid nid nid nid nid nid nid nid nid 66
+***********************************************************
+Heuristic callback called
+Heuristic callback finished
+
+User cuts applied:  26
+
+Root node processing (before b&c):
+  Real time             =    7.83 sec. (6497.21 ticks)
+Sequential b&c:
+  Real time             =   52.51 sec. (38219.46 ticks)
+                          ------------
+Total (root+branch&cut) =   60.34 sec. (44716.67 ticks)
+The treewidth bound was 3
+The objective value is -112596.520374
+The gap is 0.403691477197
+set(['y_25_22', 'y_15_27', 'y_7_31', 'y_25_26', 'y_15_22', 'y_25_24', 'y_20_15', 'y_1_14', 'y_20_19', 'y_0_25', 'y_0_24', 'y_24_22', 'y_12_24', 'y_24_26', 'y_24_27', 'y_12_29', 'y_36_22', 'y_34_29', 'y_34_25', 'y_34_24', 'y_3_2', 'y_28_29', 'y_3_25', 'y_28_25', 'y_35_25', 'y_32_24', 'y_9_24', 'y_21_29', 'y_1_15', 'y_9_29', 'y_21_24', 'y_5_4', 'y_5_7', 'y_5_6', 'y_12_34', 'y_11_24', 'y_11_25', 'y_11_26', 'y_13_27', 'y_32_31', 'y_29_25', 'y_17_8', 'y_36_25', 'y_36_24', 'y_13_15', 'y_1_27', 'y_9_7', 'y_14_15', 'y_15_8', 'y_26_27', 'y_4_7', 'y_26_22', 'y_35_22', 'y_35_24', 'y_23_22', 'y_8_38', 'y_8_39', 'y_18_29', 'y_8_37', 'y_19_8', 'y_37_39', 'y_37_38', 'y_29_2', 'y_27_37', 'y_16_25', 'y_16_24', 'y_38_39', 'y_27_8', 'y_18_34', 'y_0_2', 'y_22_37', 'y_16_36', 'y_22_38', 'y_13_14', 'y_14_27', 'y_14_22', 'y_23_8', 'y_33_29', 'y_31_29', 'y_28_2', 'y_29_24', 'y_21_9', 'y_31_24', 'y_6_24', 'y_30_24', 'y_10_9', 'y_2_22', 'y_2_25', 'y_2_24', 'y_33_18', 'y_27_22', 'y_17_26', 'y_17_27', 'y_30_12', 'y_33_12', 'y_31_2', 'y_4_6', 'y_7_29', 'y_4_9', 'y_7_24', 'y_6_7', 'y_32_2', 'y_22_8', 'y_6_9', 'y_30_29', 'y_19_22', 'y_10_24', 'y_10_29', 'y_20_8', 'y_18_12', 'y_3_28', 'y_19_15', 'y_23_26', 'y_26_8'])
+y is acyclic
+set(['z_2_0', 'z_9_21', 'z_26_27', 'z_29_2', 'z_22_25_35', 'z_2_25_29_28', 'z_15_22_19', 'z_12', 'z_13', 'z_36', 'z_24_26_11', 'z_15', 'z_18', 'z_2_31_32', 'z_14_15_1', 'z_24_26', 'z_8_22_23', 'z_8_15_19_20', 'z_7_29_31', 'z_18_29_33', 'z_9_10', 'z_24_22', 'z_36_16', 'z_15_22_27_8', 'z_24_25', 'z_4_5', 'z_9_4', 'z_24', 'z_2_25_28_3', 'z_18_29_34', 'z_29', 'z_7', 'z_12_29_30', 'z_9', 'z_8_26_27_17', 'z_13_15_14', 'z_4_7_9_6'])
+z is acyclic
+elimination order is
+['32', '33', '35', '30', '18', '16', '36', '17', '10', '11', '12', '34', '13', '5', '4', '6', '3', '0', '1', '14', '28', '23', '21', '9', '7', '31', '29', '2', '20', '19', '15', '25', '24', '26', '27', '22', '8', '37', '38', '39']
+Algorithm finished!
