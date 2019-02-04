@@ -1,0 +1,8 @@
+0: smoke
+1: lung
+2: asia
+3: tub
+4: either
+5: xray
+6: bronc
+7: dysp

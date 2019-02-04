@@ -69,8 +69,8 @@ printf "Score file stored to $score_file \n\n"
 
 # Running TWILP
 structure_output="output/"
-max_time_pr_sub_ip=5
-max_time_total_twilp=60
+max_time_pr_sub_ip=60
+max_time_total_twilp=8000
 
 printf "Running twilp with max tree width: $max_tree_width \n"
 python ./twilp/twilp.py -f $score_file -o $structure_output -t $max_tree_width -p $max_parents -r $max_time_total_twilp -s $max_time_pr_sub_ip > "logs/twilp.log"
@@ -88,7 +88,14 @@ printf "Saved to $bif_output \n\n"
 
 ## Inference algorithm
 printf "Running inference.. \n"
-python ./pgmpy/pgmpy-inference.py -f $bif_output > "logs/pgmpy-inference.log"
-printf "Done, results saved to output/$file_prefix.results \n"
+# python ./pgmpy/pgmpy-inference.py -f $bif_output > "logs/pgmpy-inference.log"
+printf "Done, results saved to output/$file_prefix.results \n\n"
+
+## Calculate structural distances
+printf "Calculating distances in true and learnt network \n"
+true_network="data/true_child.bif"
+translate_file="child_translate.txt"
+python ./pgmpy/pgmpy-structural-distance.py -f "output/$file_prefix.bif" -t $true_network -tr $translate_file > "logs/pgmpy-structural-distances.log"
+printf "Done, results of distance calculation saved to logs/pgmpy-structural-distances.log \n\n"
 
 deactivate # deactivate virtual env for pgmpy
