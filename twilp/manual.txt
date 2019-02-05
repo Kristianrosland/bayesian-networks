@@ -1,0 +1,83 @@
+
+TWILP 1.1
+=========
+
+Copyright 2015 Hossein Shahrabi Farahani, Pekka Parviainen
+
+TWILP is a software for learning Bayesian networks whose structures are bounded by some graph parameter. Currently, supported graph parameters are tree-width, pathwidth and vertex cover number. TWILP uses integer linear programming (ILP) and it is written based on algorithms in [1] and [3].
+
+Installation
+============
+
+TWILP uses CPLEX for solving the ILP problems. CPLEX can be obtained from IBM and it is free of charge for academic use under IBM Academic Initiative. TWILP is tested with CPLEX 12.2. There might be compability issues with other versions of CPLEX.
+
+You can sign up and download CPLEX from here
+
+The following python packages are required to be installed in your system prior to running TWILP:
+
+networkx version 1.8.1
+
+http://networkx.github.io
+
+numpy
+
+http://www.numpy.org
+
+CPLEX python API. It can be obtained along with CPLEX from IBM. Make sure that the path to CPLEX python API is included in your python path.
+
+Running TWILP
+=============
+
+TWILP reads family scores from a text file. For more information regarding the file format, please consult the corresponding section in the user guide. The commands are structured as follows: python path/to/twilp/twilp.py -f path/to/family/scores [optional parameters]
+
+The input parameters are as follows:
+
+-f: Path to the file that contains the family scores.
+
+-o: (default value = current directory) The learnt BNs and related information are written to this directory.
+
+-t: (default value is the number of variables minus 1) The graph parameter bound for the learnt BN. For unlimited graph parameter simply use 0.
+
+-p: (default value = 0) The maximum number of parents. For an unlimited number of parent, simply use 0. Note that if the maximum number of parents is set to a number that is larger than the graph parameter bound, the graph paramter bound is used as the maximum number of parents.
+
+-r: (default value = 86400s) This is the time maximum allowed running time in seconds. After this time reached TWILP reports the best learnt BN up to this point if a feasible solution has been found. If the optimal solution is found prior to reaching the maximum running time, TWILP reports the optimal network and stops the optimisation.
+
+-s: (default value = 3600s) This is the maximum allowed time for each sub-IP in seconds.
+
+-m: (default value = 1) Mode. Determines the graph parameter that is used as a bound. 1 = tree-width, 2 = pathwidth, 3 = vertex cover number. 
+
+-d: (default value  = 0) Debugging mode (0 = off, 1 = on). If the debugging is on, the initial ILP formulation is written to a file named debug.lp.
+
+
+Input file format
+=================
+
+The file format was first suggested at [2]. In this format the first line contains the number of variables. Each variable can have one or more potential parents. The set of possible parents for each variable occupy a section of the file. The section starts with a line containing the name of the variable and the number of its parent sets. Then each consecutive line contains the score of the family followed by the number of parents and then parents themselves.
+
+Output files
+============
+
+The learnt Bayesian networks are written in gml format. There are many free softwares available for reading this format such as yEd. yEd can be obtained from http://www.yworks.com/en/products_yed_download.html
+
+*z.gml: This file contains the learnt z-graph in gml format.
+
+*y.gml: This file contains the learnt y-graph in gml format.
+
+*.result: This file contains : (1) Information about the solution i.e., the objective value, the gap, and the elapsed time. (2) The elimination order, which is a comma separated list of variable names.
+
+Example
+=======
+
+Assume that you want to learn a Bayesian network with tree-width bounded by 2 for the learnt network. Also the maximum number of parents is 2. The maximum time to sub-IP is 300 seconds and the maximum allowed time for the problem is 8000 seconds. The argument are:
+
+python path/to/twilp/twilp.py -f path/to/family/scores -o path/to desired/folder/for/results -t 2 -p 2 -r 8000 -s 300
+
+References
+==========
+
+[1] Pekka Parviainen, Hossein Shahrabi Farahani, and Jens Lagergren. Learning Bounded Tree-width Bayesian Networks using Integer Linear Programming. In Proceedings of the 17th International Conference on Artificial Intelligence and Statistics (AISTATS), 2014.
+
+[2] Tommi Jaakkola, David Sontag, Amir Globerson, and Marina Meila. Learning Bayesian Network Structure using LP Relaxations. AISTATS 2010.
+
+[3] Janne H. Korhonen and Pekka Parviainen. Tractable Bayesian Network Structure Learning with Bounded Vertex Cover Number. NIPS 2015.
+
