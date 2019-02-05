@@ -93,8 +93,9 @@ printf "Done, results saved to output/$file_prefix.results \n\n"
 
 ## Calculate structural distances
 printf "Calculating distances in true and learnt network \n"
-true_network="data/true_child.bif"
-translate_file="child_translate.txt"
+network="alarm"
+true_network="data/true_$network.bif"
+translate_file="${network}_translate.txt"
 python ./pgmpy/pgmpy-structural-distance.py -f "output/$file_prefix.bif" -t $true_network -tr $translate_file > "logs/pgmpy-structural-distances.log"
 printf "Done, results of distance calculation saved to logs/pgmpy-structural-distances.log \n\n"
 
