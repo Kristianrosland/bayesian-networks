@@ -1,4 +1,4 @@
-output
-logs
+output/
+logs/
 .vscode
 
