@@ -1,4 +1,3 @@
-import pandas as pd # pylint: disable=E0401
 from pgmpy.sampling import BayesianModelSampling
 from pgmpy.readwrite import BIFReader
 from bifWriter import write_model
@@ -10,7 +9,7 @@ reader = BIFReader("../data/true_{}.bif".format(dataset_name))
 model = reader.get_model()
 model.check_model()
 
-sample_size = 100000
+sample_size = 1000
 sampler = BayesianModelSampling(model)
 sampled_dataframe = sampler.forward_sample(size=sample_size)
 
