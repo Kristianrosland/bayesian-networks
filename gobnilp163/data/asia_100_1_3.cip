@@ -1,0 +1,121 @@
+STATISTICS
+  Problem name     : asia_100
+  Variables        : 65 (65 binary, 0 integer, 0 implicit integer, 0 continuous)
+  Constraints      : 0 initial, 47 maximal
+OBJECTIVE
+  Sense            : maximize
+VARIABLES
+  [binary] <I#Smoking#Bronchitis#TbOrCa>: obj=-64.0060431035196, original bounds=[0,1]
+  [binary] <I#Smoking#Cancer#Bronchitis>: obj=-64.0060431035196, original bounds=[0,1]
+  [binary] <I#Smoking#Bronchitis>: obj=-65.9186439910343, original bounds=[0,1]
+  [binary] <I#Smoking#TbOrCa#Dyspnea>: obj=-67.4784680884391, original bounds=[0,1]
+  [binary] <I#Smoking#Cancer#Dyspnea>: obj=-67.4784680884391, original bounds=[0,1]
+  [binary] <I#Smoking#TbOrCa>: obj=-67.5808572455653, original bounds=[0,1]
+  [binary] <I#Smoking#Cancer>: obj=-67.5808572455653, original bounds=[0,1]
+  [binary] <I#Smoking#Dyspnea>: obj=-68.7891306751768, original bounds=[0,1]
+  [binary] <I#Smoking#XRay>: obj=-70.9798121771123, original bounds=[0,1]
+  [binary] <I#Smoking>: obj=-71.1238807763806, original bounds=[0,1]
+  [binary] <I#Cancer#Tuberculosis#TbOrCa>: obj=-2.24772935187866, original bounds=[0,1]
+  [binary] <I#Cancer#TbOrCa>: obj=-3.00976537206736, original bounds=[0,1]
+  [binary] <I#Cancer#Smoking#XRay>: obj=-8.07036732971324, original bounds=[0,1]
+  [binary] <I#Cancer#Tuberculosis#XRay>: obj=-9.37534407211808, original bounds=[0,1]
+  [binary] <I#Cancer#XRay>: obj=-9.3806376074096, original bounds=[0,1]
+  [binary] <I#Cancer#Smoking#Tuberculosis>: obj=-21.675646034534, original bounds=[0,1]
+  [binary] <I#Cancer#Smoking>: obj=-21.6903150436405, original bounds=[0,1]
+  [binary] <I#Cancer>: obj=-25.2333385744559, original bounds=[0,1]
+  [binary] <I#Bronchitis#Dyspnea>: obj=-52.0101485052013, original bounds=[0,1]
+  [binary] <I#Bronchitis#Smoking>: obj=-66.3200261983268, original bounds=[0,1]
+  [binary] <I#Bronchitis>: obj=-71.5252629836731, original bounds=[0,1]
+  [binary] <I#VisitAsia#Tuberculosis>: obj=-12.2149463919092, original bounds=[0,1]
+  [binary] <I#VisitAsia>: obj=-12.354096295505, original bounds=[0,1]
+  [binary] <I#Tuberculosis#Cancer#TbOrCa>: obj=-2.24772935187866, original bounds=[0,1]
+  [binary] <I#Tuberculosis#VisitAsia>: obj=-2.7370501271148, original bounds=[0,1]
+  [binary] <I#Tuberculosis>: obj=-2.87620003071061, original bounds=[0,1]
+  [binary] <I#TbOrCa#Cancer#Tuberculosis>: obj=-2.24772935187866, original bounds=[0,1]
+  [binary] <I#TbOrCa#Cancer>: obj=-3.00976537206736, original bounds=[0,1]
+  [binary] <I#TbOrCa#Smoking#XRay>: obj=-8.07036732971324, original bounds=[0,1]
+  [binary] <I#TbOrCa#Tuberculosis#XRay>: obj=-9.37534407211808, original bounds=[0,1]
+  [binary] <I#TbOrCa#XRay>: obj=-9.3806376074096, original bounds=[0,1]
+  [binary] <I#TbOrCa#Smoking#Tuberculosis>: obj=-21.675646034534, original bounds=[0,1]
+  [binary] <I#TbOrCa#Smoking>: obj=-21.6903150436405, original bounds=[0,1]
+  [binary] <I#TbOrCa>: obj=-25.2333385744559, original bounds=[0,1]
+  [binary] <I#XRay#TbOrCa>: obj=-16.9353752995639, original bounds=[0,1]
+  [binary] <I#XRay#Cancer>: obj=-16.9353752995639, original bounds=[0,1]
+  [binary] <I#XRay#Smoking>: obj=-32.6440076673419, original bounds=[0,1]
+  [binary] <I#XRay>: obj=-32.7880762666102, original bounds=[0,1]
+  [binary] <I#Dyspnea#Bronchitis>: obj=-52.2504613050669, original bounds=[0,1]
+  [binary] <I#Dyspnea#Smoking>: obj=-69.4308256823349, original bounds=[0,1]
+  [binary] <I#Dyspnea>: obj=-71.7655757835387, original bounds=[0,1]
+  [binary] <arrow#Smoking#Cancer>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Smoking#Bronchitis>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Smoking#TbOrCa>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Smoking#Dyspnea>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Cancer#Smoking>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Cancer#Tuberculosis>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Cancer#TbOrCa>: obj=0, original bounds=[0,1]
+  [binary] <arrow#Cancer#XRay>: obj=0, original bounds=[0,1]
+  [binary] <arrow#TbOrCa#Smoking>: obj=0, original bounds=[0,1]
+  [binary] <arrow#TbOrCa#Cancer>: obj=0, original bounds=[0,1]
+  [binary] <arrow#TbOrCa#Tuberculosis>: obj=0, original bounds=[0,1]
+  [binary] <arrow#TbOrCa#XRay>: obj=0, original bounds=[0,1]
+  [binary] <edge#Smoking#Cancer>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Smoking#Bronchitis>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Smoking#TbOrCa>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Smoking#XRay>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Smoking#Dyspnea>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Cancer#Tuberculosis>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Cancer#TbOrCa>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Cancer#XRay>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Bronchitis#Dyspnea>: obj=-0, original bounds=[0,1]
+  [binary] <edge#VisitAsia#Tuberculosis>: obj=-0, original bounds=[0,1]
+  [binary] <edge#Tuberculosis#TbOrCa>: obj=-0, original bounds=[0,1]
+  [binary] <edge#TbOrCa#XRay>: obj=-0, original bounds=[0,1]
+CONSTRAINTS
+  [setppc] <setpart1#Smoking#Cancer>:  +<I#Smoking#Cancer#Bronchitis>[B] +<I#Smoking#Cancer#Dyspnea>[B] +<I#Smoking#Cancer>[B] +<~arrow#Smoking#Cancer>[B] == 1;
+  [setppc] <setpart2#Smoking#Cancer>:  +<I#Smoking#Bronchitis#TbOrCa>[B] +<I#Smoking#Bronchitis>[B] +<I#Smoking#TbOrCa#Dyspnea>[B] +<I#Smoking#TbOrCa>[B] +<I#Smoking#Dyspnea>[B] +<I#Smoking#XRay>[B] +<I#Smoking>[B] +<arrow#Smoking#Cancer>[B] == 1;
+  [setppc] <setpart1#Smoking#Bronchitis>:  +<I#Smoking#Bronchitis#TbOrCa>[B] +<I#Smoking#Cancer#Bronchitis>[B] +<I#Smoking#Bronchitis>[B] +<~arrow#Smoking#Bronchitis>[B] == 1;
+  [setppc] <setpart2#Smoking#Bronchitis>:  +<I#Smoking#TbOrCa#Dyspnea>[B] +<I#Smoking#Cancer#Dyspnea>[B] +<I#Smoking#TbOrCa>[B] +<I#Smoking#Cancer>[B] +<I#Smoking#Dyspnea>[B] +<I#Smoking#XRay>[B] +<I#Smoking>[B] +<arrow#Smoking#Bronchitis>[B] == 1;
+  [setppc] <setpart1#Smoking#TbOrCa>:  +<I#Smoking#Bronchitis#TbOrCa>[B] +<I#Smoking#TbOrCa#Dyspnea>[B] +<I#Smoking#TbOrCa>[B] +<~arrow#Smoking#TbOrCa>[B] == 1;
+  [setppc] <setpart2#Smoking#TbOrCa>:  +<I#Smoking#Cancer#Bronchitis>[B] +<I#Smoking#Bronchitis>[B] +<I#Smoking#Cancer#Dyspnea>[B] +<I#Smoking#Cancer>[B] +<I#Smoking#Dyspnea>[B] +<I#Smoking#XRay>[B] +<I#Smoking>[B] +<arrow#Smoking#TbOrCa>[B] == 1;
+  [setppc] <setpart1#Smoking#Dyspnea>:  +<I#Smoking#TbOrCa#Dyspnea>[B] +<I#Smoking#Cancer#Dyspnea>[B] +<I#Smoking#Dyspnea>[B] +<~arrow#Smoking#Dyspnea>[B] == 1;
+  [setppc] <setpart2#Smoking#Dyspnea>:  +<I#Smoking#Bronchitis#TbOrCa>[B] +<I#Smoking#Cancer#Bronchitis>[B] +<I#Smoking#Bronchitis>[B] +<I#Smoking#TbOrCa>[B] +<I#Smoking#Cancer>[B] +<I#Smoking#XRay>[B] +<I#Smoking>[B] +<arrow#Smoking#Dyspnea>[B] == 1;
+  [setppc] <setpart1#Cancer#Smoking>:  +<I#Cancer#Smoking#XRay>[B] +<I#Cancer#Smoking#Tuberculosis>[B] +<I#Cancer#Smoking>[B] +<~arrow#Cancer#Smoking>[B] == 1;
+  [setppc] <setpart2#Cancer#Smoking>:  +<I#Cancer#Tuberculosis#TbOrCa>[B] +<I#Cancer#TbOrCa>[B] +<I#Cancer#Tuberculosis#XRay>[B] +<I#Cancer#XRay>[B] +<I#Cancer>[B] +<arrow#Cancer#Smoking>[B] == 1;
+  [setppc] <setpart1#Cancer#Tuberculosis>:  +<I#Cancer#Tuberculosis#TbOrCa>[B] +<I#Cancer#Tuberculosis#XRay>[B] +<I#Cancer#Smoking#Tuberculosis>[B] +<~arrow#Cancer#Tuberculosis>[B] == 1;
+  [setppc] <setpart2#Cancer#Tuberculosis>:  +<I#Cancer#TbOrCa>[B] +<I#Cancer#Smoking#XRay>[B] +<I#Cancer#XRay>[B] +<I#Cancer#Smoking>[B] +<I#Cancer>[B] +<arrow#Cancer#Tuberculosis>[B] == 1;
+  [setppc] <setpart1#Cancer#TbOrCa>:  +<I#Cancer#Tuberculosis#TbOrCa>[B] +<I#Cancer#TbOrCa>[B] +<~arrow#Cancer#TbOrCa>[B] == 1;
+  [setppc] <setpart2#Cancer#TbOrCa>:  +<I#Cancer#Smoking#XRay>[B] +<I#Cancer#Tuberculosis#XRay>[B] +<I#Cancer#XRay>[B] +<I#Cancer#Smoking#Tuberculosis>[B] +<I#Cancer#Smoking>[B] +<I#Cancer>[B] +<arrow#Cancer#TbOrCa>[B] == 1;
+  [setppc] <setpart1#Cancer#XRay>:  +<I#Cancer#Smoking#XRay>[B] +<I#Cancer#Tuberculosis#XRay>[B] +<I#Cancer#XRay>[B] +<~arrow#Cancer#XRay>[B] == 1;
+  [setppc] <setpart2#Cancer#XRay>:  +<I#Cancer#Tuberculosis#TbOrCa>[B] +<I#Cancer#TbOrCa>[B] +<I#Cancer#Smoking#Tuberculosis>[B] +<I#Cancer#Smoking>[B] +<I#Cancer>[B] +<arrow#Cancer#XRay>[B] == 1;
+  [setppc] <setpart1#TbOrCa#Smoking>:  +<I#TbOrCa#Smoking#XRay>[B] +<I#TbOrCa#Smoking#Tuberculosis>[B] +<I#TbOrCa#Smoking>[B] +<~arrow#TbOrCa#Smoking>[B] == 1;
+  [setppc] <setpart2#TbOrCa#Smoking>:  +<I#TbOrCa#Cancer#Tuberculosis>[B] +<I#TbOrCa#Cancer>[B] +<I#TbOrCa#Tuberculosis#XRay>[B] +<I#TbOrCa#XRay>[B] +<I#TbOrCa>[B] +<arrow#TbOrCa#Smoking>[B] == 1;
+  [setppc] <setpart1#TbOrCa#Cancer>:  +<I#TbOrCa#Cancer#Tuberculosis>[B] +<I#TbOrCa#Cancer>[B] +<~arrow#TbOrCa#Cancer>[B] == 1;
+  [setppc] <setpart2#TbOrCa#Cancer>:  +<I#TbOrCa#Smoking#XRay>[B] +<I#TbOrCa#Tuberculosis#XRay>[B] +<I#TbOrCa#XRay>[B] +<I#TbOrCa#Smoking#Tuberculosis>[B] +<I#TbOrCa#Smoking>[B] +<I#TbOrCa>[B] +<arrow#TbOrCa#Cancer>[B] == 1;
+  [setppc] <setpart1#TbOrCa#Tuberculosis>:  +<I#TbOrCa#Cancer#Tuberculosis>[B] +<I#TbOrCa#Tuberculosis#XRay>[B] +<I#TbOrCa#Smoking#Tuberculosis>[B] +<~arrow#TbOrCa#Tuberculosis>[B] == 1;
+  [setppc] <setpart2#TbOrCa#Tuberculosis>:  +<I#TbOrCa#Cancer>[B] +<I#TbOrCa#Smoking#XRay>[B] +<I#TbOrCa#XRay>[B] +<I#TbOrCa#Smoking>[B] +<I#TbOrCa>[B] +<arrow#TbOrCa#Tuberculosis>[B] == 1;
+  [setppc] <setpart1#TbOrCa#XRay>:  +<I#TbOrCa#Smoking#XRay>[B] +<I#TbOrCa#Tuberculosis#XRay>[B] +<I#TbOrCa#XRay>[B] +<~arrow#TbOrCa#XRay>[B] == 1;
+  [setppc] <setpart2#TbOrCa#XRay>:  +<I#TbOrCa#Cancer#Tuberculosis>[B] +<I#TbOrCa#Cancer>[B] +<I#TbOrCa#Smoking#Tuberculosis>[B] +<I#TbOrCa#Smoking>[B] +<I#TbOrCa>[B] +<arrow#TbOrCa#XRay>[B] == 1;
+  [setppc] <setpart3#Smoking#Cancer>:  +<arrow#Smoking#Cancer>[B] +<arrow#Cancer#Smoking>[B] +<~edge#Smoking#Cancer>[B] == 1;
+  [setppc] <setpart3#Smoking#Bronchitis>:  +<arrow#Smoking#Bronchitis>[B] +<I#Bronchitis#Smoking>[B] +<~edge#Smoking#Bronchitis>[B] == 1;
+  [setppc] <setpart3#Smoking#TbOrCa>:  +<arrow#Smoking#TbOrCa>[B] +<arrow#TbOrCa#Smoking>[B] +<~edge#Smoking#TbOrCa>[B] == 1;
+  [setppc] <setpart3#Smoking#XRay>:  +<I#Smoking#XRay>[B] +<I#XRay#Smoking>[B] +<~edge#Smoking#XRay>[B] == 1;
+  [setppc] <setpart3#Smoking#Dyspnea>:  +<arrow#Smoking#Dyspnea>[B] +<I#Dyspnea#Smoking>[B] +<~edge#Smoking#Dyspnea>[B] == 1;
+  [setppc] <setpart3#Cancer#Tuberculosis>:  +<arrow#Cancer#Tuberculosis>[B] +<I#Tuberculosis#Cancer#TbOrCa>[B] +<~edge#Cancer#Tuberculosis>[B] == 1;
+  [setppc] <setpart3#Cancer#TbOrCa>:  +<arrow#Cancer#TbOrCa>[B] +<arrow#TbOrCa#Cancer>[B] +<~edge#Cancer#TbOrCa>[B] == 1;
+  [setppc] <setpart3#Cancer#XRay>:  +<arrow#Cancer#XRay>[B] +<I#XRay#Cancer>[B] +<~edge#Cancer#XRay>[B] == 1;
+  [setppc] <setpart3#Bronchitis#Dyspnea>:  +<I#Bronchitis#Dyspnea>[B] +<I#Dyspnea#Bronchitis>[B] +<~edge#Bronchitis#Dyspnea>[B] == 1;
+  [setppc] <setpart3#VisitAsia#Tuberculosis>:  +<I#VisitAsia#Tuberculosis>[B] +<I#Tuberculosis#VisitAsia>[B] +<~edge#VisitAsia#Tuberculosis>[B] == 1;
+  [setppc] <setpart3#Tuberculosis#TbOrCa>:  +<I#Tuberculosis#Cancer#TbOrCa>[B] +<arrow#TbOrCa#Tuberculosis>[B] +<~edge#Tuberculosis#TbOrCa>[B] == 1;
+  [setppc] <setpart3#TbOrCa#XRay>:  +<arrow#TbOrCa#XRay>[B] +<I#XRay#TbOrCa>[B] +<~edge#TbOrCa#XRay>[B] == 1;
+  [dagcluster] <DagCluster>: [8, [Dyspnea, Bronchitis, XRay, TbOrCa, VisitAsia, Tuberculosis, Cancer, Smoking], [3, 3, 4, 8, 2, 3, 8, 10], [[1, 1, 0], [1, 1, 0], [1, 1, 1, 0], [2, 1, 2, 2, 1, 2, 1, 0], [1, 0], [2, 1, 0], [2, 1, 2, 2, 1, 2, 1, 0], [2, 2, 1, 2, 2, 1, 1, 1, 1, 0]], [[[1], [7], []], [[0], [7], []], [[3], [6], [7], []], [[6, 5], [6], [7, 2], [5, 2], [2], [7, 5], [7], []], [[5], []], [[6, 3], [4], []], [[5, 3], [3], [7, 2], [5, 2], [2], [7, 5], [7], []], [[1, 3], [6, 1], [1], [3, 0], [6, 0], [3], [6], [0], [2], []]], [[I#Dyspnea#Bronchitis, I#Dyspnea#Smoking, I#Dyspnea], [I#Bronchitis#Dyspnea, I#Bronchitis#Smoking, I#Bronchitis], [I#XRay#TbOrCa, I#XRay#Cancer, I#XRay#Smoking, I#XRay], [I#TbOrCa#Cancer#Tuberculosis, I#TbOrCa#Cancer, I#TbOrCa#Smoking#XRay, I#TbOrCa#Tuberculosis#XRay, I#TbOrCa#XRay, I#TbOrCa#Smoking#Tuberculosis, I#TbOrCa#Smoking, I#TbOrCa], [I#VisitAsia#Tuberculosis, I#VisitAsia], [I#Tuberculosis#Cancer#TbOrCa, I#Tuberculosis#VisitAsia, I#Tuberculosis], [I#Cancer#Tuberculosis#TbOrCa, I#Cancer#TbOrCa, I#Cancer#Smoking#XRay, I#Cancer#Tuberculosis#XRay, I#Cancer#XRay, I#Cancer#Smoking#Tuberculosis, I#Cancer#Smoking, I#Cancer], [I#Smoking#Bronchitis#TbOrCa, I#Smoking#Cancer#Bronchitis, I#Smoking#Bronchitis, I#Smoking#TbOrCa#Dyspnea, I#Smoking#Cancer#Dyspnea, I#Smoking#TbOrCa, I#Smoking#Cancer, I#Smoking#Dyspnea, I#Smoking#XRay, I#Smoking]], [2, 2, 3, 4, 1, 3, 4, 5], [[1, 7], [0, 7], [3, 6, 7], [2, 5, 6, 7], [5], [3, 4, 6], [2, 3, 5, 7], [0, 1, 2, 3, 6]], [[I#Dyspnea#Bronchitis, I#Dyspnea#Smoking], [I#Bronchitis#Dyspnea, I#Bronchitis#Smoking], [I#XRay#TbOrCa, I#XRay#Cancer, I#XRay#Smoking], [arrow#TbOrCa#XRay, arrow#TbOrCa#Tuberculosis, arrow#TbOrCa#Cancer, arrow#TbOrCa#Smoking], [I#VisitAsia#Tuberculosis], [I#Tuberculosis#Cancer#TbOrCa, I#Tuberculosis#VisitAsia, I#Tuberculosis#Cancer#TbOrCa], [arrow#Cancer#XRay, arrow#Cancer#TbOrCa, arrow#Cancer#Tuberculosis, arrow#Cancer#Smoking], [arrow#Smoking#Dyspnea, arrow#Smoking#Bronchitis, I#Smoking#XRay, arrow#Smoking#TbOrCa, arrow#Smoking#Cancer]], [2, 2, 3, 4, 1, 3, 4, 5], [[1, 7], [0, 7], [3, 6, 7], [2, 5, 6, 7], [5], [3, 4, 6], [2, 3, 5, 7], [0, 1, 2, 3, 6]], [[edge#Bronchitis#Dyspnea, edge#Smoking#Dyspnea], [edge#Bronchitis#Dyspnea, edge#Smoking#Bronchitis], [edge#TbOrCa#XRay, edge#Cancer#XRay, edge#Smoking#XRay], [edge#TbOrCa#XRay, edge#Tuberculosis#TbOrCa, edge#Cancer#TbOrCa, edge#Smoking#TbOrCa], [edge#VisitAsia#Tuberculosis], [edge#Tuberculosis#TbOrCa, edge#VisitAsia#Tuberculosis, edge#Cancer#Tuberculosis], [edge#Cancer#XRay, edge#Cancer#TbOrCa, edge#Cancer#Tuberculosis, edge#Smoking#Cancer], [edge#Smoking#Dyspnea, edge#Smoking#Bronchitis, edge#Smoking#XRay, edge#Smoking#TbOrCa, edge#Smoking#Cancer]]];
+  [setppc] <one_parent_set0>:  +<I#Smoking#Bronchitis#TbOrCa>[B] +<I#Smoking#Cancer#Bronchitis>[B] +<I#Smoking#Bronchitis>[B] +<I#Smoking#TbOrCa#Dyspnea>[B] +<I#Smoking#Cancer#Dyspnea>[B] +<I#Smoking#TbOrCa>[B] +<I#Smoking#Cancer>[B] +<I#Smoking#Dyspnea>[B] +<I#Smoking#XRay>[B] +<I#Smoking>[B] == 1;
+  [setppc] <one_parent_set1>:  +<I#Cancer#Tuberculosis#TbOrCa>[B] +<I#Cancer#TbOrCa>[B] +<I#Cancer#Smoking#XRay>[B] +<I#Cancer#Tuberculosis#XRay>[B] +<I#Cancer#XRay>[B] +<I#Cancer#Smoking#Tuberculosis>[B] +<I#Cancer#Smoking>[B] +<I#Cancer>[B] == 1;
+  [setppc] <one_parent_set2>:  +<I#Bronchitis#Dyspnea>[B] +<I#Bronchitis#Smoking>[B] +<I#Bronchitis>[B] == 1;
+  [setppc] <one_parent_set3>:  +<I#VisitAsia#Tuberculosis>[B] +<I#VisitAsia>[B] == 1;
+  [setppc] <one_parent_set4>:  +<I#Tuberculosis#Cancer#TbOrCa>[B] +<I#Tuberculosis#VisitAsia>[B] +<I#Tuberculosis>[B] == 1;
+  [setppc] <one_parent_set5>:  +<I#TbOrCa#Cancer#Tuberculosis>[B] +<I#TbOrCa#Cancer>[B] +<I#TbOrCa#Smoking#XRay>[B] +<I#TbOrCa#Tuberculosis#XRay>[B] +<I#TbOrCa#XRay>[B] +<I#TbOrCa#Smoking#Tuberculosis>[B] +<I#TbOrCa#Smoking>[B] +<I#TbOrCa>[B] == 1;
+  [setppc] <one_parent_set6>:  +<I#XRay#TbOrCa>[B] +<I#XRay#Cancer>[B] +<I#XRay#Smoking>[B] +<I#XRay>[B] == 1;
+  [setppc] <one_parent_set7>:  +<I#Dyspnea#Bronchitis>[B] +<I#Dyspnea#Smoking>[B] +<I#Dyspnea>[B] == 1;
+  [metadata] <parent set data>: [8, [Smoking, Cancer, Bronchitis, VisitAsia, Tuberculosis, TbOrCa, XRay, Dyspnea], [10, 8, 3, 2, 3, 8, 4, 3], [[2, 2, 1, 2, 2, 1, 1, 1, 1, 0], [2, 1, 2, 2, 1, 2, 1, 0], [1, 1, 0], [1, 0], [2, 1, 0], [2, 1, 2, 2, 1, 2, 1, 0], [1, 1, 1, 0], [1, 1, 0]], [[[2, 5], [1, 2], [2], [5, 7], [1, 7], [5], [1], [7], [6], []], [[4, 5], [5], [0, 6], [4, 6], [6], [0, 4], [0], []], [[7], [0], []], [[4], []], [[1, 5], [3], []], [[1, 4], [1], [0, 6], [4, 6], [6], [0, 4], [0], []], [[5], [1], [0], []], [[2], [0], []]], [[I#Smoking#Bronchitis#TbOrCa, I#Smoking#Cancer#Bronchitis, I#Smoking#Bronchitis, I#Smoking#TbOrCa#Dyspnea, I#Smoking#Cancer#Dyspnea, I#Smoking#TbOrCa, I#Smoking#Cancer, I#Smoking#Dyspnea, I#Smoking#XRay, I#Smoking], [I#Cancer#Tuberculosis#TbOrCa, I#Cancer#TbOrCa, I#Cancer#Smoking#XRay, I#Cancer#Tuberculosis#XRay, I#Cancer#XRay, I#Cancer#Smoking#Tuberculosis, I#Cancer#Smoking, I#Cancer], [I#Bronchitis#Dyspnea, I#Bronchitis#Smoking, I#Bronchitis], [I#VisitAsia#Tuberculosis, I#VisitAsia], [I#Tuberculosis#Cancer#TbOrCa, I#Tuberculosis#VisitAsia, I#Tuberculosis], [I#TbOrCa#Cancer#Tuberculosis, I#TbOrCa#Cancer, I#TbOrCa#Smoking#XRay, I#TbOrCa#Tuberculosis#XRay, I#TbOrCa#XRay, I#TbOrCa#Smoking#Tuberculosis, I#TbOrCa#Smoking, I#TbOrCa], [I#XRay#TbOrCa, I#XRay#Cancer, I#XRay#Smoking, I#XRay], [I#Dyspnea#Bronchitis, I#Dyspnea#Smoking, I#Dyspnea]], [5, 4, 2, 1, 3, 4, 3, 2], [[1, 2, 5, 6, 7], [0, 4, 5, 6], [0, 7], [4], [1, 3, 5], [0, 1, 4, 6], [0, 1, 5], [0, 2]], [[arrow#Smoking#Cancer, arrow#Smoking#Bronchitis, arrow#Smoking#TbOrCa, I#Smoking#XRay, arrow#Smoking#Dyspnea], [arrow#Cancer#Smoking, arrow#Cancer#Tuberculosis, arrow#Cancer#TbOrCa, arrow#Cancer#XRay], [I#Bronchitis#Smoking, I#Bronchitis#Dyspnea], [I#VisitAsia#Tuberculosis], [I#Tuberculosis#Cancer#TbOrCa, I#Tuberculosis#VisitAsia, I#Tuberculosis#Cancer#TbOrCa], [arrow#TbOrCa#Smoking, arrow#TbOrCa#Cancer, arrow#TbOrCa#Tuberculosis, arrow#TbOrCa#XRay], [I#XRay#Smoking, I#XRay#Cancer, I#XRay#TbOrCa], [I#Dyspnea#Smoking, I#Dyspnea#Bronchitis]], [5, 4, 2, 1, 3, 4, 3, 2], [[1, 2, 5, 6, 7], [0, 4, 5, 6], [0, 7], [4], [1, 3, 5], [0, 1, 4, 6], [0, 1, 5], [0, 2]], [[edge#Smoking#Cancer, edge#Smoking#Bronchitis, edge#Smoking#TbOrCa, edge#Smoking#XRay, edge#Smoking#Dyspnea], [edge#Smoking#Cancer, edge#Cancer#Tuberculosis, edge#Cancer#TbOrCa, edge#Cancer#XRay], [edge#Smoking#Bronchitis, edge#Bronchitis#Dyspnea], [edge#VisitAsia#Tuberculosis], [edge#Cancer#Tuberculosis, edge#VisitAsia#Tuberculosis, edge#Tuberculosis#TbOrCa], [edge#Smoking#TbOrCa, edge#Cancer#TbOrCa, edge#Tuberculosis#TbOrCa, edge#TbOrCa#XRay], [edge#Smoking#XRay, edge#Cancer#XRay, edge#TbOrCa#XRay], [edge#Smoking#Dyspnea, edge#Bronchitis#Dyspnea]]];
+  [metadata] <property data>: [[9, [scorer_name, scorer_version, scorer_url, score_type, ess, parent_limit, pruning, num_records, input_file], [GOBNILP, 1.6, www.cs.york.ac.uk/aig/sw/gobnilp/, BDeu, 1.000000, 3, TRUE, 100, data/asia_100.dat]], [8, [[2, [arity, values], [2, nonsmoker\ smoker]], [2, [arity, values], [2, absent\ present]], [2, [arity, values], [2, absent\ present]], [2, [arity, values], [2, no_visit\ visit]], [3, [arity, values, num_unobserved_values], [2, absent, 1]], [2, [arity, values], [2, false\ true]], [2, [arity, values], [2, normal\ abnormal]], [2, [arity, values], [2, absent\ present]]]]];
+END

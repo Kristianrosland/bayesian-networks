@@ -1,8 +1,8 @@
-/* A Bison parser, made by GNU Bison 3.0.2.  */
+/* A Bison parser, made by GNU Bison 3.0.4.  */
 
 /* Bison implementation for Yacc-like parsers in C
 
-   Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
+   Copyright (C) 1984, 1989-1990, 2000-2015 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "3.0.2"
+#define YYBISON_VERSION "3.0.4"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -64,7 +64,6 @@
 /* Copy the first part of user declarations.  */
 #line 1 "src/mmlparse2.y" /* yacc.c:339  */
 
-#pragma ident "@(#) $Id: mmlparse2.y,v 1.13 2014/01/12 09:47:38 bzfkocht Exp $"
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                                           */
 /*   File....: mmlparse2.y                                                   */
@@ -74,7 +73,7 @@
 /*                                                                           */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*
- * Copyright (C) 2001-2012 by Thorsten Koch <koch@zib.de>
+ * Copyright (C) 2001-2015 by Thorsten Koch <koch@zib.de>
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public License
@@ -137,7 +136,7 @@
 extern void yyerror(const char* s);
  
 
-#line 141 "src/mmlparse2.c" /* yacc.c:339  */
+#line 140 "src/mmlparse2.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -288,10 +287,10 @@ extern int yydebug;
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE YYSTYPE;
+
 union YYSTYPE
 {
-#line 79 "src/mmlparse2.y" /* yacc.c:355  */
+#line 78 "src/mmlparse2.y" /* yacc.c:355  */
 
    unsigned int bits;
    Numb*        numb;
@@ -301,8 +300,10 @@ union YYSTYPE
    Define*      def;
    CodeNode*    code;
 
-#line 305 "src/mmlparse2.c" /* yacc.c:355  */
+#line 304 "src/mmlparse2.c" /* yacc.c:355  */
 };
+
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -315,7 +316,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 319 "src/mmlparse2.c" /* yacc.c:358  */
+#line 320 "src/mmlparse2.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -623,37 +624,37 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint16 yyrline[] =
 {
-       0,   148,   148,   149,   150,   151,   152,   153,   154,   155,
-     156,   157,   158,   166,   173,   179,   185,   195,   196,   199,
-     202,   205,   211,   220,   229,   238,   247,   256,   259,   269,
-     272,   275,   282,   285,   286,   293,   294,   302,   309,   318,
-     328,   339,   348,   358,   362,   372,   373,   374,   378,   381,
-     382,   383,   388,   396,   397,   398,   399,   404,   412,   413,
-     417,   418,   426,   427,   430,   431,   435,   439,   443,   446,
-     458,   461,   471,   477,   480,   483,   488,   493,   501,   504,
-     509,   514,   521,   525,   530,   534,   540,   543,   548,   553,
-     558,   562,   569,   576,   582,   588,   594,   599,   607,   616,
-     625,   633,   644,   647,   651,   656,   664,   665,   668,   671,
-     672,   675,   678,   679,   682,   685,   686,   689,   692,   693,
-     696,   699,   700,   703,   706,   707,   708,   709,   710,   714,
-     715,   719,   720,   721,   722,   726,   727,   728,   732,   733,
-     734,   735,   736,   739,   740,   748,   749,   750,   754,   755,
-     759,   760,   761,   767,   768,   771,   777,   780,   781,   782,
-     783,   784,   785,   786,   787,   788,   789,   790,   793,   796,
-     799,   807,   813,   816,   822,   823,   824,   832,   836,   837,
-     838,   839,   840,   841,   851,   852,   859,   862,   868,   869,
-     870,   873,   874,   877,   878,   881,   882,   886,   887,   888,
-     891,   895,   898,   903,   904,   907,   910,   913,   916,   919,
-     922,   925,   928,   929,   930,   931,   932,   933,   934,   937,
-     940,   946,   947,   951,   952,   953,   954,   958,   961,   964,
-     968,   969,   970,   971,   972,   973,   974,   975,   976,   977,
-     978,   979,   980,   981,   982,   983,   984,   985,   986,   987,
-     992,   998,   999,  1003,  1006,  1012,  1015,  1021,  1022,  1023,
-    1027,  1028,  1029,  1030,  1031,  1032,  1038,  1039,  1040,  1044,
-    1045,  1046,  1049,  1052,  1055,  1058,  1064,  1065,  1066,  1069,
-    1072,  1075,  1080,  1085,  1086,  1087,  1088,  1089,  1090,  1091,
-    1092,  1093,  1094,  1095,  1096,  1097,  1098,  1099,  1100,  1101,
-    1103,  1104,  1105,  1108,  1111,  1114,  1117,  1120
+       0,   147,   147,   148,   149,   150,   151,   152,   153,   154,
+     155,   156,   157,   165,   172,   178,   184,   194,   195,   198,
+     201,   204,   210,   219,   228,   237,   246,   255,   258,   268,
+     271,   274,   281,   284,   285,   292,   293,   301,   308,   317,
+     327,   338,   347,   357,   361,   371,   372,   373,   377,   380,
+     381,   382,   387,   395,   396,   397,   398,   403,   411,   412,
+     416,   417,   425,   426,   429,   430,   434,   438,   442,   445,
+     457,   460,   470,   476,   479,   482,   487,   492,   500,   503,
+     508,   513,   520,   524,   529,   533,   539,   542,   547,   552,
+     557,   561,   568,   575,   581,   587,   593,   598,   606,   615,
+     624,   632,   643,   646,   650,   655,   663,   664,   667,   670,
+     671,   674,   677,   678,   681,   684,   685,   688,   691,   692,
+     695,   698,   699,   702,   705,   706,   707,   708,   709,   713,
+     714,   718,   719,   720,   721,   725,   726,   727,   731,   732,
+     733,   734,   735,   738,   739,   747,   748,   749,   753,   754,
+     758,   759,   760,   766,   767,   770,   776,   779,   780,   781,
+     782,   783,   784,   785,   786,   787,   788,   789,   792,   795,
+     798,   806,   812,   815,   821,   822,   823,   831,   835,   836,
+     837,   838,   839,   840,   850,   851,   858,   861,   867,   868,
+     869,   872,   873,   876,   877,   880,   881,   885,   886,   887,
+     890,   894,   897,   902,   903,   906,   909,   912,   915,   918,
+     921,   924,   927,   928,   929,   930,   931,   932,   933,   936,
+     939,   945,   946,   950,   951,   952,   953,   957,   960,   963,
+     967,   968,   969,   970,   971,   972,   973,   974,   975,   976,
+     977,   978,   979,   980,   981,   982,   983,   984,   985,   986,
+     991,   997,   998,  1002,  1005,  1011,  1014,  1020,  1021,  1022,
+    1026,  1027,  1028,  1029,  1030,  1031,  1037,  1038,  1039,  1043,
+    1044,  1045,  1048,  1051,  1054,  1057,  1063,  1064,  1065,  1068,
+    1071,  1074,  1079,  1084,  1085,  1086,  1087,  1088,  1089,  1090,
+    1091,  1092,  1093,  1094,  1095,  1096,  1097,  1098,  1099,  1100,
+    1102,  1103,  1104,  1107,  1110,  1113,  1116,  1119
 };
 #endif
 
@@ -2450,73 +2451,73 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 148 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 147 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2456 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2457 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 3:
-#line 149 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 148 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2462 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2463 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 4:
-#line 150 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 149 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2468 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2469 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 5:
-#line 151 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 150 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2474 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2475 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 152 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 151 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2480 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2481 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 7:
-#line 153 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 152 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2486 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2487 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 8:
-#line 154 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 153 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2492 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2493 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 9:
-#line 155 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 154 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2498 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2499 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 10:
-#line 156 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 155 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2504 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2505 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 157 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 156 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2510 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2511 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 12:
-#line 158 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 157 "src/mmlparse2.y" /* yacc.c:1646  */
     { code_set_root((yyvsp[0].code)); }
-#line 2516 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2517 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 13:
-#line 166 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 165 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_set1, 3,
             code_new_name((yyvsp[-3].name)),                                       /* Name */
@@ -2524,33 +2525,33 @@ yyreduce:
                code_new_inst(i_bool_true, 0)),              
             (yyvsp[-1].code));                                              /* initial set */
       }
-#line 2528 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2529 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 14:
-#line 173 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 172 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_set1, 3,
             code_new_name((yyvsp[-6].name)),                                       /* Name */
             (yyvsp[-4].code),                                                 /* index set */
             (yyvsp[-1].code));                                                      /* set */
       }
-#line 2539 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2540 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 15:
-#line 179 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 178 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_set2, 3,
             code_new_name((yyvsp[-6].name)),                                       /* Name */
             (yyvsp[-4].code),                                                 /* index set */
             (yyvsp[-1].code));                                   /* initial set_entry_list */
       }
-#line 2550 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2551 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 16:
-#line 185 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 184 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_set2, 3,
             code_new_name((yyvsp[-5].name)),                                       /* Name */
@@ -2558,131 +2559,131 @@ yyreduce:
                code_new_inst(i_bool_true, 0)),              
             (yyvsp[-1].code));                                   /* initial set_entry_list */
       }
-#line 2562 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2563 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 17:
-#line 195 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 194 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_entry_list_new, 1, (yyvsp[0].code)); }
-#line 2568 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2569 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 18:
-#line 196 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 195 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_add, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 2576 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2577 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 19:
-#line 199 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 198 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_subsets, 3, (yyvsp[-3].code), (yyvsp[-1].code), code_new_numb(numb_new_integer(-1)));
       }
-#line 2584 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2585 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 20:
-#line 202 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 201 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_subsets, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 2592 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2593 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 21:
-#line 205 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 204 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_powerset, 1, (yyvsp[-1].code));
       }
-#line 2600 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2601 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 22:
-#line 211 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 210 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_entry, 2, (yyvsp[-1].code), (yyvsp[0].code)); }
-#line 2606 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2607 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 23:
-#line 220 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 219 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newdef, 3,
             code_new_define((yyvsp[-6].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-4].code)),
             (yyvsp[-1].code));
       }
-#line 2617 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2618 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 24:
-#line 229 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 228 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newdef, 3,
             code_new_define((yyvsp[-6].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-4].code)),
             (yyvsp[-1].code));
       }
-#line 2628 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2629 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 25:
-#line 238 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 237 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newdef, 3,
             code_new_define((yyvsp[-6].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-4].code)),
             (yyvsp[-1].code));
       }
-#line 2639 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2640 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 26:
-#line 247 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 246 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newdef, 3,
             code_new_define((yyvsp[-6].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-4].code)),
             (yyvsp[-1].code));
       }
-#line 2650 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2651 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 27:
-#line 256 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 255 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_elem_list_new, 1, code_new_name((yyvsp[0].name)));
       }
-#line 2658 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2659 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 28:
-#line 259 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 258 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_elem_list_add, 2, (yyvsp[-2].code), code_new_name((yyvsp[0].name)));
       }
-#line 2666 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2667 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 29:
-#line 269 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 268 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_para1, 4, code_new_name((yyvsp[-7].name)), (yyvsp[-5].code), (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 2674 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2675 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 30:
-#line 272 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 271 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_para2, 4, code_new_name((yyvsp[-6].name)), (yyvsp[-4].code), (yyvsp[-1].code), code_new_inst(i_nop, 0));
       }
-#line 2682 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2683 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 31:
-#line 275 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 274 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_para1, 4,
             code_new_name((yyvsp[-3].name)),
@@ -2690,44 +2691,44 @@ yyreduce:
             (yyvsp[-1].code),
             code_new_inst(i_nop, 0));
       }
-#line 2694 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2695 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 32:
-#line 282 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 281 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_nop, 0); }
-#line 2700 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2701 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 33:
-#line 285 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 284 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 2706 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2707 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 34:
-#line 286 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 285 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_new, 1,
             code_new_inst(i_entry, 2, code_new_inst(i_tuple_empty, 0), (yyvsp[0].code)));
       }
-#line 2715 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2716 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 35:
-#line 293 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 292 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_nop, 0); }
-#line 2721 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2722 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 36:
-#line 294 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 293 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_entry, 2, code_new_inst(i_tuple_empty, 0), (yyvsp[0].code)); }
-#line 2727 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2728 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 37:
-#line 302 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 301 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-7].name)),
@@ -2735,11 +2736,11 @@ yyreduce:
             code_new_numb(numb_copy(numb_unknown())),
             code_new_numb(numb_copy(numb_unknown())));
       }
-#line 2739 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2740 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 38:
-#line 309 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 308 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-4].name)),
@@ -2749,11 +2750,11 @@ yyreduce:
             code_new_numb(numb_copy(numb_unknown())),
             code_new_numb(numb_copy(numb_unknown())));
       }
-#line 2753 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2754 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 39:
-#line 318 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 317 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-6].name)),
@@ -2764,11 +2765,11 @@ yyreduce:
             code_new_numb(numb_copy(numb_unknown())),
             code_new_numb(numb_copy(numb_unknown())));
       }
-#line 2768 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2769 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 40:
-#line 328 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 327 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-3].name)),
@@ -2780,11 +2781,11 @@ yyreduce:
             code_new_numb(numb_copy(numb_unknown())),
             code_new_numb(numb_copy(numb_unknown())));
       }
-#line 2784 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2785 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 41:
-#line 339 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 338 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-7].name)),
@@ -2794,11 +2795,11 @@ yyreduce:
             code_new_inst(i_bound_new, 1, code_new_numb(numb_new_integer(1))),
             (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 2798 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2799 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 42:
-#line 348 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 347 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-4].name)),
@@ -2809,20 +2810,20 @@ yyreduce:
             code_new_inst(i_bound_new, 1, code_new_numb(numb_new_integer(1))),
             (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 2813 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2814 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 43:
-#line 358 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 357 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-9].name)), (yyvsp[-7].code), code_new_varclass(VAR_INT), (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 2822 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2823 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 44:
-#line 362 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 361 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_newsym_var, 7,
             code_new_name((yyvsp[-6].name)),
@@ -2830,283 +2831,283 @@ yyreduce:
                code_new_inst(i_bool_true, 0)),              
             code_new_varclass(VAR_INT), (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 2834 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2835 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 45:
-#line 372 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 371 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_varclass(VAR_CON); }
-#line 2840 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2841 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 46:
-#line 373 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 372 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_varclass(VAR_CON); }
-#line 2846 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2847 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 47:
-#line 374 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 373 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_varclass(VAR_IMP); }
-#line 2852 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2853 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 48:
-#line 378 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 377 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_bound_new, 1, code_new_numb(numb_new_integer(0)));
       }
-#line 2860 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2861 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 49:
-#line 381 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 380 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bound_new, 1, (yyvsp[0].code)); }
-#line 2866 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2867 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 50:
-#line 382 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 381 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_bound(BOUND_MINUS_INFTY); }
-#line 2872 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2873 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 51:
-#line 383 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 382 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-6].code),
             code_new_inst(i_bound_new, 1, (yyvsp[-4].code)),
             code_new_bound(BOUND_MINUS_INFTY));
       }
-#line 2882 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2883 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 52:
-#line 388 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 387 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-6].code),
             code_new_bound(BOUND_MINUS_INFTY),
             code_new_inst(i_bound_new, 1, (yyvsp[-1].code)));
       }
-#line 2892 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2893 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 53:
-#line 396 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 395 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_bound(BOUND_INFTY); }
-#line 2898 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2899 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 54:
-#line 397 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 396 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bound_new, 1, (yyvsp[0].code)); }
-#line 2904 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2905 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 55:
-#line 398 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 397 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_bound(BOUND_INFTY); }
-#line 2910 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2911 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 56:
-#line 399 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 398 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code),
             code_new_inst(i_bound_new, 1, (yyvsp[-3].code)),
             code_new_bound(BOUND_INFTY));
       }
-#line 2920 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2921 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 57:
-#line 404 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 403 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code),
             code_new_bound(BOUND_INFTY),
             code_new_inst(i_bound_new, 1, (yyvsp[-1].code)));
       }
-#line 2930 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2931 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 58:
-#line 412 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 411 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb(numb_new_integer(0)); }
-#line 2936 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2937 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 59:
-#line 413 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 412 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 2942 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2943 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 60:
-#line 417 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 416 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb(numb_copy(numb_unknown())); }
-#line 2948 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2949 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 61:
-#line 418 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 417 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 2954 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2955 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 62:
-#line 426 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 425 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_entry_list_new, 1, (yyvsp[0].code)); }
-#line 2960 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2961 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 63:
-#line 427 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 426 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_entry_list_add, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 2968 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2969 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 64:
-#line 430 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 429 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read, 1, (yyvsp[0].code)); }
-#line 2974 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2975 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 65:
-#line 431 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 430 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_list_matrix, 2, (yyvsp[-1].code), (yyvsp[0].code)); }
-#line 2980 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2981 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 66:
-#line 435 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 434 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_entry, 2, (yyvsp[-1].code), (yyvsp[0].code)); }
-#line 2986 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2987 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 67:
-#line 439 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 438 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 2992 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 2993 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 68:
-#line 443 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 442 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_matrix_list_new, 2, (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 3000 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3001 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 69:
-#line 446 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 445 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_matrix_list_add, 3, (yyvsp[-3].code), (yyvsp[-2].code), (yyvsp[-1].code));
       }
-#line 3008 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3009 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 70:
-#line 458 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 457 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_object_min, 2, code_new_name((yyvsp[-3].name)), (yyvsp[-1].code));
       }
-#line 3016 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3017 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 71:
-#line 461 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 460 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_object_max, 2, code_new_name((yyvsp[-3].name)), (yyvsp[-1].code));
       }
-#line 3024 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3025 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 72:
-#line 471 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 470 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_subto, 2, code_new_name((yyvsp[-3].name)), (yyvsp[-1].code));
      }
-#line 3032 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3033 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 73:
-#line 477 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 476 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint_list, 2, (yyvsp[0].code), code_new_inst(i_nop, 0));
      }
-#line 3040 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3041 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 74:
-#line 480 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 479 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint_list, 2, (yyvsp[-2].code), (yyvsp[0].code));
      }
-#line 3048 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3049 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 75:
-#line 483 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 482 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint_list, 2, 
            code_new_inst(i_forall, 2, (yyvsp[-2].code), (yyvsp[0].code)),
            code_new_inst(i_nop, 0));
      }
-#line 3058 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3059 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 76:
-#line 488 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 487 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint_list, 2, 
            code_new_inst(i_expr_if_else, 3, (yyvsp[-3].code), (yyvsp[-1].code), code_new_inst(i_nop, 0)),
            code_new_inst(i_nop, 0));
       }
-#line 3068 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3069 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 77:
-#line 493 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 492 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint_list, 2, 
            code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code)),
            code_new_inst(i_nop, 0));
       }
-#line 3078 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3079 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 78:
-#line 501 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 500 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint, 4, (yyvsp[-3].code), (yyvsp[-2].code), (yyvsp[-1].code), code_new_bits((yyvsp[0].bits)));
      }
-#line 3086 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3087 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 79:
-#line 504 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 503 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint, 4, (yyvsp[-3].code), (yyvsp[-2].code),
            code_new_inst(i_term_expr, 1, (yyvsp[-1].code)),
            code_new_bits((yyvsp[0].bits)));
      }
-#line 3096 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3097 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 80:
-#line 509 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 508 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_constraint, 4,
            code_new_inst(i_term_expr, 1, (yyvsp[-3].code)),
            (yyvsp[-2].code), (yyvsp[-1].code), code_new_bits((yyvsp[0].bits)));
      }
-#line 3106 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3107 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 81:
-#line 514 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 513 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
         (yyval.code) = code_new_inst(i_constraint, 4,
            code_new_inst(i_term_expr, 1, (yyvsp[-3].code)),
@@ -3114,97 +3115,97 @@ yyreduce:
            code_new_inst(i_term_expr, 1, (yyvsp[-1].code)),
            code_new_bits((yyvsp[0].bits)));
      }
-#line 3118 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3119 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 82:
-#line 521 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 520 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_rangeconst, 6, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code), (yyvsp[-4].code),
            code_new_contype(CON_RHS), code_new_bits((yyvsp[0].bits))); 
      }
-#line 3127 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3128 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 83:
-#line 525 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 524 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_rangeconst, 6, (yyvsp[-5].code),
            code_new_inst(i_term_expr, 1, (yyvsp[-3].code)), (yyvsp[-1].code), (yyvsp[-4].code),
            code_new_contype(CON_RHS), code_new_bits((yyvsp[0].bits))); 
      }
-#line 3137 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3138 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 84:
-#line 530 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 529 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_rangeconst, 6, (yyvsp[-1].code), (yyvsp[-3].code), (yyvsp[-5].code), (yyvsp[-4].code),
            code_new_contype(CON_LHS), code_new_bits((yyvsp[0].bits))); 
      }
-#line 3146 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3147 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 85:
-#line 534 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 533 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_rangeconst, 6, (yyvsp[-1].code),
            code_new_inst(i_term_expr, 1, (yyvsp[-3].code)),
            (yyvsp[-5].code), (yyvsp[-4].code),
            code_new_contype(CON_LHS), code_new_bits((yyvsp[0].bits))); 
      }
-#line 3157 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3158 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 86:
-#line 540 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 539 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code), (yyvsp[-6].code), (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3165 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3166 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 87:
-#line 543 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 542 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
             (yyvsp[-7].code), (yyvsp[-6].code), (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3175 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3176 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 88:
-#line 548 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 547 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-6].code)),
             (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3185 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3186 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 89:
-#line 553 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 552 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code), (yyvsp[-6].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)),
             (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3195 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3196 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 90:
-#line 558 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 557 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code), (yyvsp[-6].code), (yyvsp[-4].code), (yyvsp[-3].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), code_new_bits((yyvsp[0].bits)));
       }
-#line 3204 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3205 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 91:
-#line 562 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 561 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3212,11 +3213,11 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-6].code)),
             (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3216 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3217 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 92:
-#line 569 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 568 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3224,54 +3225,54 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)),
             (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3228 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3229 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 93:
-#line 576 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 575 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
             (yyvsp[-7].code), (yyvsp[-6].code), (yyvsp[-4].code), (yyvsp[-3].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), code_new_bits((yyvsp[0].bits)));
       }
-#line 3239 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3240 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 94:
-#line 582 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 581 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-6].code)),
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)),
             (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3250 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3251 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 95:
-#line 588 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 587 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-6].code)),
             (yyvsp[-4].code), (yyvsp[-3].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), code_new_bits((yyvsp[0].bits)));
       }
-#line 3261 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3262 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 96:
-#line 594 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 593 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code), (yyvsp[-6].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)), (yyvsp[-3].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), code_new_bits((yyvsp[0].bits)));
       }
-#line 3271 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3272 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 97:
-#line 599 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 598 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3280,11 +3281,11 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)),
             (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3284 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3285 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 98:
-#line 607 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 606 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3294,11 +3295,11 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), 
             code_new_bits((yyvsp[0].bits)));
       }
-#line 3298 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3299 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 99:
-#line 616 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 615 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3308,11 +3309,11 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), 
             code_new_bits((yyvsp[0].bits)));
       }
-#line 3312 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3313 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 100:
-#line 625 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 624 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code), (yyvsp[-8].code), (yyvsp[-7].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-6].code)),
@@ -3321,11 +3322,11 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), 
             code_new_bits((yyvsp[0].bits)));
       }
-#line 3325 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3326 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 101:
-#line 633 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 632 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif_else, 8, (yyvsp[-10].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-8].code)),
@@ -3336,1376 +3337,1376 @@ yyreduce:
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), 
             code_new_bits((yyvsp[0].bits)));
       }
-#line 3340 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3341 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 102:
-#line 644 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 643 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vif, 5, (yyvsp[-6].code), (yyvsp[-4].code), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3348 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3349 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 103:
-#line 647 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 646 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vif, 5, (yyvsp[-6].code), 
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)), (yyvsp[-3].code), (yyvsp[-2].code), code_new_bits((yyvsp[0].bits)));
       }
-#line 3357 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3358 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 104:
-#line 651 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 650 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vif, 5, (yyvsp[-6].code), 
             (yyvsp[-4].code), (yyvsp[-3].code), code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), 
             code_new_bits((yyvsp[0].bits)));
       }
-#line 3367 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3368 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 105:
-#line 656 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 655 "src/mmlparse2.y" /* yacc.c:1646  */
     { /* ??? This is an error */
          (yyval.code) = code_new_inst(i_vif, 5, (yyvsp[-6].code),
             code_new_inst(i_term_expr, 1, (yyvsp[-4].code)), (yyvsp[-3].code), 
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), code_new_bits((yyvsp[0].bits)));
       }
-#line 3377 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3378 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 106:
-#line 664 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 663 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_ne, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3383 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3384 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 107:
-#line 665 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 664 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_ne, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3391 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3392 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 108:
-#line 668 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 667 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_ne, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3399 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3400 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 109:
-#line 671 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 670 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_eq, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3405 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3406 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 110:
-#line 672 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 671 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_eq, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3413 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3414 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 111:
-#line 675 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 674 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_eq, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3421 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3422 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 112:
-#line 678 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 677 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_le, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3427 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3428 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 113:
-#line 679 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 678 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_le, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3435 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3436 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 114:
-#line 682 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 681 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_le, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3443 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3444 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 115:
-#line 685 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 684 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_ge, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3449 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3450 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 116:
-#line 686 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 685 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_ge, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3457 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3458 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 117:
-#line 689 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 688 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_ge, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3465 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3466 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 118:
-#line 692 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 691 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_lt, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3471 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3472 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 119:
-#line 693 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 692 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_lt, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3479 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3480 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 120:
-#line 696 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 695 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_lt, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3487 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3488 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 121:
-#line 699 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 698 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_gt, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3493 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3494 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 122:
-#line 700 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 699 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_gt, 2, code_new_inst(i_term_expr, 1, (yyvsp[-2].code)), (yyvsp[0].code));
       }
-#line 3501 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3502 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 123:
-#line 703 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 702 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vbool_gt, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3509 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3510 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 124:
-#line 706 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 705 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_and, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3515 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3516 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 125:
-#line 707 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 706 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_or,  2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3521 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3522 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 126:
-#line 708 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 707 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_xor, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3527 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3528 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 127:
-#line 709 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 708 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vbool_not, 1, (yyvsp[0].code)); }
-#line 3533 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3534 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 128:
-#line 710 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 709 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 3539 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3540 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 129:
-#line 714 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 713 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = 0; }
-#line 3545 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3546 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 130:
-#line 715 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 714 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = (yyvsp[-2].bits) | (yyvsp[0].bits); }
-#line 3551 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3552 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 131:
-#line 719 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 718 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = LP_FLAG_CON_SCALE; }
-#line 3557 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3558 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 132:
-#line 720 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 719 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = LP_FLAG_CON_SEPAR; }
-#line 3563 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3564 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 133:
-#line 721 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 720 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = LP_FLAG_CON_CHECK; }
-#line 3569 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3570 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 134:
-#line 722 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 721 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.bits) = LP_FLAG_CON_INDIC; }
-#line 3575 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3576 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 135:
-#line 726 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 725 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_contype(CON_RHS); }
-#line 3581 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3582 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 136:
-#line 727 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 726 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_contype(CON_LHS); }
-#line 3587 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3588 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 137:
-#line 728 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 727 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_contype(CON_EQUAL); }
-#line 3593 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3594 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 138:
-#line 732 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 731 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 3599 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3600 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 139:
-#line 733 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 732 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_add, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3605 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3606 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 140:
-#line 734 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 733 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_sub, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3611 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3612 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 141:
-#line 735 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 734 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_const, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3617 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3618 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 142:
-#line 736 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 735 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_term_sub, 2, (yyvsp[-2].code), code_new_inst(i_term_expr, 1, (yyvsp[0].code)));
       }
-#line 3625 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3626 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 143:
-#line 739 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 738 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_const, 2, (yyvsp[0].code), (yyvsp[-2].code)); }
-#line 3631 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3632 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 144:
-#line 740 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 739 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_term_sub, 2,
             code_new_inst(i_term_expr, 1, (yyvsp[-2].code)),
             (yyvsp[0].code));
       }
-#line 3641 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3642 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 145:
-#line 748 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 747 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 3647 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3648 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 146:
-#line 749 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 748 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_coeff, 2, (yyvsp[-2].code), (yyvsp[0].code));  }
-#line 3653 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3654 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 147:
-#line 750 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 749 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_term_coeff, 2, (yyvsp[-2].code),
             code_new_inst(i_expr_div, 2, code_new_numb(numb_new_integer(1)), (yyvsp[0].code)));
       }
-#line 3662 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3663 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 148:
-#line 754 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 753 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_coeff, 2, (yyvsp[0].code), (yyvsp[-2].code)); }
-#line 3668 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3669 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 149:
-#line 755 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 754 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_term_mul, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3674 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3675 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 151:
-#line 760 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 759 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 3680 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3681 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 152:
-#line 761 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 760 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_term_coeff, 2, (yyvsp[0].code), code_new_numb(numb_new_integer(-1)));
       }
-#line 3688 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3689 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 153:
-#line 767 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 766 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 3694 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3695 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 154:
-#line 768 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 767 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_term_power, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3702 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3703 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 155:
-#line 771 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 770 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_term_sum, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3710 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3711 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 156:
-#line 777 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 776 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_symbol_deref, 2, code_new_symbol((yyvsp[-1].sym)), (yyvsp[0].code));
       }
-#line 3718 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3719 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 157:
-#line 780 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 779 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vabs, 1, (yyvsp[-1].code)); }
-#line 3724 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3725 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 158:
-#line 781 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 780 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(-2)), (yyvsp[-1].code)); }
-#line 3730 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3731 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 159:
-#line 782 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 781 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(3)), (yyvsp[-1].code)); }
-#line 3736 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3737 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 160:
-#line 783 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 782 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(4)), (yyvsp[-1].code)); }
-#line 3742 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3743 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 161:
-#line 784 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 783 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(5)), (yyvsp[-1].code)); }
-#line 3748 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3749 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 162:
-#line 785 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 784 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(6)), (yyvsp[-1].code)); }
-#line 3754 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3755 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 163:
-#line 786 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 785 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(7)), (yyvsp[-1].code)); }
-#line 3760 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3761 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 164:
-#line 787 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 786 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(8)), (yyvsp[-1].code)); }
-#line 3766 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3767 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 165:
-#line 788 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 787 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(9)), (yyvsp[-1].code)); }
-#line 3772 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3773 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 166:
-#line 789 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 788 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_vexpr_fun, 2, code_new_numb(numb_new_integer(10)), (yyvsp[-1].code)); }
-#line 3778 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3779 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 167:
-#line 790 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 789 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vexpr_fun, 3, code_new_numb(numb_new_integer(11)), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 3786 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3787 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 168:
-#line 793 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 792 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_vexpr_fun, 3, code_new_numb(numb_new_integer(12)), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 3794 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3795 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 169:
-#line 796 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 795 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 3802 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3803 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 170:
-#line 799 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 798 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 3808 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3809 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 171:
-#line 807 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 806 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_sos, 2, code_new_name((yyvsp[-3].name)), (yyvsp[-1].code));
      }
-#line 3816 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3817 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 172:
-#line 813 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 812 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_soset, 3, (yyvsp[0].code), (yyvsp[-3].code), (yyvsp[-2].code));
      }
-#line 3824 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3825 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 173:
-#line 816 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 815 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_forall, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3832 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3833 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 174:
-#line 822 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 821 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb(numb_new_integer(1)); }
-#line 3838 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3839 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 175:
-#line 823 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 822 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb(numb_new_integer(1)); }
-#line 3844 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3845 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 176:
-#line 824 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 823 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb(numb_new_integer(2)); }
-#line 3850 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3851 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 177:
-#line 832 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 831 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 3856 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3857 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 178:
-#line 836 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 835 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_print, 1, (yyvsp[0].code)); }
-#line 3862 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3863 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 179:
-#line 837 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 836 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_print, 1, (yyvsp[0].code)); }
-#line 3868 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3869 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 180:
-#line 838 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 837 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_print, 1, (yyvsp[0].code)); }
-#line 3874 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3875 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 181:
-#line 839 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 838 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_print, 1, code_new_symbol((yyvsp[0].sym))); }
-#line 3880 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3881 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 182:
-#line 840 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 839 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_check, 1, (yyvsp[0].code)); }
-#line 3886 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3887 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 183:
-#line 841 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 840 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_forall, 2, (yyvsp[-2].code), (yyvsp[0].code));
      }
-#line 3894 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3895 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 184:
-#line 851 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 850 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 3900 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3901 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 185:
-#line 852 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 851 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_idxset_new, 3,
             code_new_inst(i_tuple_empty, 0), (yyvsp[0].code), code_new_inst(i_bool_true, 0));
       }
-#line 3909 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3910 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 186:
-#line 859 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 858 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_idxset_new, 3, (yyvsp[-4].code), (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3917 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3918 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 187:
-#line 862 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 861 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_idxset_new, 3, (yyvsp[-2].code), (yyvsp[0].code), code_new_inst(i_bool_true, 0));
       }
-#line 3925 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3926 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 189:
-#line 869 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 868 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_union, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3931 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3932 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 190:
-#line 870 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 869 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_union, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3939 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3940 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 191:
-#line 873 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 872 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_sdiff, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3945 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3946 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 192:
-#line 874 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 873 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_minus, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3953 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3954 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 193:
-#line 877 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 876 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_minus, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3959 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3960 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 194:
-#line 878 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 877 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_inter, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3965 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3966 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 196:
-#line 882 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 881 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_union2, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3971 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3972 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 198:
-#line 887 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 886 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_cross, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3977 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3978 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 199:
-#line 888 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 887 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_cross, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 3985 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3986 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 200:
-#line 891 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 890 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_inter2, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 3991 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 3992 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 201:
-#line 895 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 894 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_symbol_deref, 2, code_new_symbol((yyvsp[-1].sym)), (yyvsp[0].code));
       }
-#line 3999 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4000 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 202:
-#line 898 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 897 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_define_deref, 2,
             code_new_define((yyvsp[-3].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-1].code)));
       }
-#line 4009 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4010 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 203:
-#line 903 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 902 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_empty, 1, code_new_size(0)); }
-#line 4015 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4016 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 204:
-#line 904 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 903 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_range2, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4023 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4024 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 205:
-#line 907 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 906 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_range2, 3, (yyvsp[-3].code), (yyvsp[-1].code), code_new_numb(numb_new_integer(1)));
       }
-#line 4031 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4032 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 206:
-#line 910 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 909 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_range, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4039 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4040 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 207:
-#line 913 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 912 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_range, 3, (yyvsp[-3].code), (yyvsp[-1].code), code_new_numb(numb_new_integer(1)));
       }
-#line 4047 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4048 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 208:
-#line 916 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 915 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_argmin, 3, code_new_numb(numb_new_integer(1)), (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4055 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4056 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 209:
-#line 919 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 918 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_argmin, 3, (yyvsp[-4].code), (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4063 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4064 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 210:
-#line 922 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 921 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_argmax, 3, code_new_numb(numb_new_integer(1)), (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4071 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4072 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 211:
-#line 925 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 924 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_argmax, 3, (yyvsp[-4].code), (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4079 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4080 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 212:
-#line 928 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 927 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 4085 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4086 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 213:
-#line 929 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 928 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_new_tuple, 1, (yyvsp[-1].code)); }
-#line 4091 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4092 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 214:
-#line 930 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 929 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_new_elem, 1, (yyvsp[-1].code)); }
-#line 4097 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4098 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 215:
-#line 931 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 930 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_idxset, 1, (yyvsp[-1].code)); }
-#line 4103 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4104 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 216:
-#line 932 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 931 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_expr, 2, (yyvsp[-3].code), (yyvsp[-1].code)); }
-#line 4109 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4110 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 217:
-#line 933 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 932 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_set_expr, 2, (yyvsp[-3].code), (yyvsp[-1].code)); }
-#line 4115 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4116 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 218:
-#line 934 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 933 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_set_proj, 2, (yyvsp[-3].code), (yyvsp[-1].code));
        }
-#line 4123 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4124 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 219:
-#line 937 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 936 "src/mmlparse2.y" /* yacc.c:1646  */
     {
           (yyval.code) = code_new_inst(i_set_indexset, 1, code_new_symbol((yyvsp[-1].sym)));
        }
-#line 4131 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4132 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 220:
-#line 940 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 939 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4139 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4140 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 221:
-#line 946 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 945 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_new, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4145 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4146 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 222:
-#line 947 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 946 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_param, 2, (yyvsp[-1].code), (yyvsp[0].code)); }
-#line 4151 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4152 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 223:
-#line 951 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 950 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_skip, 1, (yyvsp[0].code)); }
-#line 4157 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4158 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 224:
-#line 952 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 951 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_use, 1, (yyvsp[0].code)); }
-#line 4163 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4164 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 225:
-#line 953 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 952 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_comment, 1, (yyvsp[0].code)); }
-#line 4169 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4170 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 226:
-#line 954 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 953 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read_match, 1, (yyvsp[0].code)); }
-#line 4175 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4176 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 227:
-#line 958 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 957 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_tuple_list_new, 1, (yyvsp[0].code));
       }
-#line 4183 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4184 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 228:
-#line 961 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 960 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_tuple_list_add, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4191 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4192 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 229:
-#line 964 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 963 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_read, 1, (yyvsp[0].code)); }
-#line 4197 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4198 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 230:
-#line 968 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 967 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_eq, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4203 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4204 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 231:
-#line 969 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 968 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_ne, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4209 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4210 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 232:
-#line 970 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 969 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_gt, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4215 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4216 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 233:
-#line 971 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 970 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_ge, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4221 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4222 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 234:
-#line 972 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 971 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_lt, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4227 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4228 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 235:
-#line 973 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 972 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_le, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4233 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4234 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 236:
-#line 974 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 973 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_seq, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4239 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4240 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 237:
-#line 975 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 974 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_sneq, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4245 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4246 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 238:
-#line 976 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 975 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_subs, 2, (yyvsp[0].code), (yyvsp[-2].code)); }
-#line 4251 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4252 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 239:
-#line 977 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 976 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_sseq, 2, (yyvsp[0].code), (yyvsp[-2].code)); }
-#line 4257 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4258 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 240:
-#line 978 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 977 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_subs, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4263 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4264 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 241:
-#line 979 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 978 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_sseq, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4269 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4270 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 242:
-#line 980 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 979 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_and, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4275 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4276 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 243:
-#line 981 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 980 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_or,  2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4281 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4282 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 244:
-#line 982 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 981 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_xor, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4287 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4288 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 245:
-#line 983 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 982 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_not, 1, (yyvsp[0].code)); }
-#line 4293 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4294 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 246:
-#line 984 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 983 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 4299 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4300 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 247:
-#line 985 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 984 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_is_elem, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4305 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4306 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 248:
-#line 986 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 985 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_bool_exists, 1, (yyvsp[-1].code)); }
-#line 4311 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4312 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 249:
-#line 987 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 986 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_define_deref, 2,
             code_new_define((yyvsp[-3].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-1].code)));
       }
-#line 4321 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4322 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 250:
-#line 992 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 991 "src/mmlparse2.y" /* yacc.c:1646  */
     {
         (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
      }
-#line 4329 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4330 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 251:
-#line 998 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 997 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_tuple_empty, 0); }
-#line 4335 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4336 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 252:
-#line 999 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 998 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_tuple_new, 1, (yyvsp[-1].code));  }
-#line 4341 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4342 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 253:
-#line 1003 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1002 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_tuple_empty, 0);
       }
-#line 4349 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4350 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 254:
-#line 1006 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1005 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_tuple_new, 1, (yyvsp[-1].code));
       }
-#line 4357 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4358 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 255:
-#line 1012 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1011 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_elem_list_new, 1, (yyvsp[0].code));
       }
-#line 4365 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4366 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 256:
-#line 1015 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1014 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_elem_list_add, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4373 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4374 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 257:
-#line 1021 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1020 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 4379 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4380 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 258:
-#line 1022 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1021 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_add, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4385 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4386 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 259:
-#line 1023 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1022 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_sub, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4391 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4392 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 260:
-#line 1027 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1026 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 4397 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4398 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 261:
-#line 1028 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1027 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_mul, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4403 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4404 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 262:
-#line 1029 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1028 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_div, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4409 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4410 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 263:
-#line 1030 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1029 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_mod, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4415 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4416 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 264:
-#line 1031 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1030 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_intdiv, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4421 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4422 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 265:
-#line 1032 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1031 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_prod, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4429 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4430 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 267:
-#line 1039 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1038 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[0].code); }
-#line 4435 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4436 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 268:
-#line 1040 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1039 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_neg, 1, (yyvsp[0].code)); }
-#line 4441 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4442 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 270:
-#line 1045 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1044 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_pow, 2, (yyvsp[-2].code), (yyvsp[0].code)); }
-#line 4447 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4448 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 271:
-#line 1046 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1045 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_sum, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4455 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4456 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 272:
-#line 1049 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1048 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_min, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4463 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4464 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 273:
-#line 1052 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1051 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_max, 2, (yyvsp[-2].code), (yyvsp[0].code));
       }
-#line 4471 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4472 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 274:
-#line 1055 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1054 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_sglmin, 1, (yyvsp[-1].code));
          }
-#line 4479 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4480 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 275:
-#line 1058 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1057 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_sglmax, 1, (yyvsp[-1].code));
       }
-#line 4487 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4488 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 276:
-#line 1064 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1063 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_numb((yyvsp[0].numb)); }
-#line 4493 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4494 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 277:
-#line 1065 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1064 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_strg((yyvsp[0].strg));  }
-#line 4499 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4500 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 278:
-#line 1066 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1065 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_local_deref, 1, code_new_name((yyvsp[0].name)));
       }
-#line 4507 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4508 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 279:
-#line 1069 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1068 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_symbol_deref, 2, code_new_symbol((yyvsp[-1].sym)), (yyvsp[0].code));
       }
-#line 4515 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4516 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 280:
-#line 1072 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1071 "src/mmlparse2.y" /* yacc.c:1646  */
     { 
          (yyval.code) = code_new_inst(i_symbol_deref, 2, code_new_symbol((yyvsp[-1].sym)), (yyvsp[0].code));
       }
-#line 4523 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4524 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 281:
-#line 1075 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1074 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_define_deref, 2,
             code_new_define((yyvsp[-3].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-1].code)));
       }
-#line 4533 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4534 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 282:
-#line 1080 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1079 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_define_deref, 2,
             code_new_define((yyvsp[-3].def)),
             code_new_inst(i_tuple_new, 1, (yyvsp[-1].code)));
       }
-#line 4543 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4544 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 283:
-#line 1085 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1084 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_fac, 1, (yyvsp[-1].code)); }
-#line 4549 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4550 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 284:
-#line 1086 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1085 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_card, 1, (yyvsp[-1].code)); }
-#line 4555 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4556 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 285:
-#line 1087 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1086 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_abs, 1, (yyvsp[-1].code)); }
-#line 4561 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4562 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 286:
-#line 1088 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1087 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_sgn, 1, (yyvsp[-1].code)); }
-#line 4567 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4568 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 287:
-#line 1089 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1088 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_round, 1, (yyvsp[-1].code)); }
-#line 4573 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4574 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 288:
-#line 1090 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1089 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_floor, 1, (yyvsp[-1].code)); }
-#line 4579 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4580 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 289:
-#line 1091 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1090 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_ceil, 1, (yyvsp[-1].code)); }
-#line 4585 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4586 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 290:
-#line 1092 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1091 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_log, 1, (yyvsp[-1].code)); }
-#line 4591 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4592 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 291:
-#line 1093 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1092 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_ln, 1, (yyvsp[-1].code)); }
-#line 4597 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4598 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 292:
-#line 1094 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1093 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_exp, 1, (yyvsp[-1].code)); }
-#line 4603 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4604 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 293:
-#line 1095 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1094 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_sqrt, 1, (yyvsp[-1].code)); }
-#line 4609 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4610 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 294:
-#line 1096 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1095 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_sin, 1, (yyvsp[-1].code)); }
-#line 4615 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4616 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 295:
-#line 1097 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1096 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_cos, 1, (yyvsp[-1].code)); }
-#line 4621 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4622 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 296:
-#line 1098 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1097 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_tan, 1, (yyvsp[-1].code)); }
-#line 4627 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4628 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 297:
-#line 1099 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1098 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_asin, 1, (yyvsp[-1].code)); }
-#line 4633 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4634 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 298:
-#line 1100 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1099 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_acos, 1, (yyvsp[-1].code)); }
-#line 4639 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4640 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 299:
-#line 1101 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1100 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_atan, 1, (yyvsp[-1].code)); }
-#line 4645 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4646 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 300:
-#line 1103 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1102 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = (yyvsp[-1].code); }
-#line 4651 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4652 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 301:
-#line 1104 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1103 "src/mmlparse2.y" /* yacc.c:1646  */
     { (yyval.code) = code_new_inst(i_expr_length, 1, (yyvsp[-1].code)); }
-#line 4657 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4658 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 302:
-#line 1105 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1104 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_substr, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4665 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4666 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 303:
-#line 1108 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1107 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_rand, 2, (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4673 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4674 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 304:
-#line 1111 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1110 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_if_else, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4681 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4682 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 305:
-#line 1114 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1113 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_ord, 3, (yyvsp[-5].code), (yyvsp[-3].code), (yyvsp[-1].code));
       }
-#line 4689 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4690 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 306:
-#line 1117 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1116 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_min2, 1, (yyvsp[-1].code));
       }
-#line 4697 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4698 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
   case 307:
-#line 1120 "src/mmlparse2.y" /* yacc.c:1646  */
+#line 1119 "src/mmlparse2.y" /* yacc.c:1646  */
     {
          (yyval.code) = code_new_inst(i_expr_max2, 1, (yyvsp[-1].code));
       }
-#line 4705 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4706 "src/mmlparse2.c" /* yacc.c:1646  */
     break;
 
 
-#line 4709 "src/mmlparse2.c" /* yacc.c:1646  */
+#line 4710 "src/mmlparse2.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
