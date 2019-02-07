@@ -83,7 +83,7 @@ bif_output="output/$file_prefix.bif"
 
 printf "Fitting the data.. \n"
 source ./pgmpy/.myprojectenv/bin/activate 
-python ./pgmpy/pgmpy-estimation.py -t $data_file -g $gml_file -o $bif_output > "logs/pgmpy-estimation.log"
+# python ./pgmpy/pgmpy-estimation.py -t $data_file -g $gml_file -o $bif_output > "logs/pgmpy-estimation.log"
 printf "Saved to $bif_output \n\n"
 
 ## Inference algorithm
@@ -96,7 +96,7 @@ printf "Calculating distances in true and learnt network \n"
 network="alarm"
 true_network="data/true_$network.bif"
 translate_file="${network}_translate.txt"
-python ./pgmpy/pgmpy-structural-distance.py -f "output/$file_prefix.bif" -t $true_network -tr $translate_file > "logs/pgmpy-structural-distances.log"
+# python ./pgmpy/pgmpy-structural-distance.py -f "output/$file_prefix.bif" -t $true_network -tr $translate_file > "logs/pgmpy-structural-distances.log"
 printf "Done, results of distance calculation saved to logs/pgmpy-structural-distances.log \n\n"
 
 deactivate # deactivate virtual env for pgmpy
