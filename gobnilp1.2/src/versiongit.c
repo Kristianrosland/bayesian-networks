@@ -1,2 +1,0 @@
-#define GOBNILP_VERSION "1.2"
-#define GOBNILP_GITHASH "233793d"
