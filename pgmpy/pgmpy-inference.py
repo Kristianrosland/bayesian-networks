@@ -32,12 +32,12 @@ for _ in range(1):
 '''
 
 # SPECIFIC QUERY
-query_variable = '21'
+query_variable = 'y'
 
 if not model.has_node(query_variable):
     print "Error: Query variable {} not present \n".format(query_variable)
     sys.exit()
 
 print "Running inference on {} \n".format(query_variable)
-query = inference.query(variables=[query_variable], evidence={'9': 2})
+query = inference.query(variables=[query_variable], evidence={})
 print "Query result\n{}\n".format(query[query_variable])

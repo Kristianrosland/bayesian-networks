@@ -1,4 +1,8 @@
 output/
 logs/
+scipoptsuite-3.2.0/
+gobnilp163/
+gobnilp1.2/
+twilp/
 .vscode
 
